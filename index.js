@@ -23,7 +23,33 @@ app.set("view engine", "ejs"); //Not necessary to write ".ejs"//
 
 //Home page//
 app.get("/", async (req, res) => {
-    res.render("index");
+    try {
+        res.render("index");
+    } catch (error) {
+        console.log(error);
+        res.status(404).send('Sorry, cannot find that');
+    }
+    
+});
+
+//About page//
+app.get("/a-propos-de-litterama", async (req, res) => {
+    try {
+        res.render("about");
+    } catch (error) {
+        console.log(error);
+        res.status(404).send('Sorry, cannot find that');
+    }
+});
+
+//Contact//
+app.get("/contactez-nous", async (res, res) => {
+    try {
+        res.render("contact")
+    } catch (error) {
+        console.log(error);
+        res.status(404).send('Sorry, cannot find that');
+    }
 });
 
 
