@@ -43,18 +43,14 @@ app.get("/a-propos-de-litterama", async (req, res) => {
 });
 
 //Contact//
-app.get("/contactez-nous", async (res, res) => {
+app.get("/contactez-nous", async (req, res) => {
     try {
-        res.render("contact")
+        res.render("contact");
     } catch (error) {
         console.log(error);
         res.status(404).send('Sorry, cannot find that');
     }
 });
-
-
-
-
 
 
 
