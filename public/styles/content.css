@@ -1,5 +1,5 @@
 body{
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: "Dosis", sans-serif;
     background-color: white;
 }
 a{
@@ -21,19 +21,36 @@ nav> a{
 }
 
 /**********Home page***************/
-div.hero>img{
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.hero{
   position: relative;
+  margin: auto 0 auto 0;
+  height: 85vh;
+  padding: 24px 40px 0 40px;
+  overflow: hidden;
 }
-div.textbox-hero{
-  text-align: center;
+
+div.hero>img{
+  object-fit: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+div.textbox-container{
+  width: 1280px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+  transform: translateX(-50%)       translateY(-55%);
+}
+div.textbox.inner{
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+  top: 0;
+  margin: auto;
 }
 
 
