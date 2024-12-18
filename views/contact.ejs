@@ -2,15 +2,35 @@
 <title>Contactez-nous | Littérama</title>
 
 <div class="content">
-    <div class="contact form">
-        <p class="contact-title">Contactez-nous</p>
-        <form action="mailto:litteramamedia@gmail.com" method="post" enctype="text/plain">
 
+    <div class="row-contact" style="min-height: 100vh;">
+        <div class="column-contact form">
+            <h1 style="text-align: center; margin-top: 35px;">Contactez-nous</h1>
+            <form action="mailto:litteramamedia@gmail.com" method="post" enctype="text/plain">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>                
         </form>
-
+        </div>
+        <div class="column-contact">
+            <h4 style="margin-top: 40px;">Renseignements généraux</h4>
+        </div>
+        
     </div>
-    <div class="contacts">
-        <p>Renseignements généraux</p>
+
+    <div class="contact-info">
+        
     </div>
 </div>
 

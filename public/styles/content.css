@@ -1,6 +1,7 @@
 body{
-  font-family: "Dosis", sans-serif;
+  font-family: "Roboto", sans-serif;
     background-color: white;
+    margin: 0;
 }
 a{
   color: white;
@@ -12,8 +13,8 @@ img{
 
 /*******Header************/
 header{
-  background-color: #004466 ;
-  border-radius: 5px;
+  background-color: black;
+  padding: 10px;
   
 }
 nav> a{
@@ -21,42 +22,54 @@ nav> a{
 }
 
 /**********Home page***************/
-.hero{
-  position: relative;
-  margin: auto 0 auto 0;
-  height: 85vh;
-  padding: 24px 40px 0 40px;
+.hero-section{
   overflow: hidden;
+  position: relative;
+}
+video{
+  width: 100%;
+}
+div.textbox{
+  color: white;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 150px;
+
+}
+.hero-title{
+  font-size: 4.3rem;
+  line-height: 60px;
+  margin-bottom: 3px;
+  padding-left: 80px;
+  padding-right: 80px;
+  font-weight: 800;
+  text-shadow: 1px 1px 30px #000000;
 }
 
-div.hero>img{
-  object-fit: cover;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+/*********Contact*****************/
+div.row-contact{
+  display: flex;
 }
-div.textbox-container{
-  width: 1280px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%)       translateY(-55%);
+div.column-contact{
+  flex: 25%;
+  padding: 15px;
 }
-div.textbox.inner{
-  max-width: 500px;
-  text-align: center;
-  position: relative;
-  top: 0;
-  margin: auto;
+.column-contact.form{
+  color: white;
+  background-color: #004466;
+  background-image: url(/images/logo_sans.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+
 }
+
 
 
 /*********Footer****************/
 footer{
-  background-color: #004466;
+  background-color: black;
   text-align: center;
   color: white;
+  padding: 10px;
 }
