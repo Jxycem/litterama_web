@@ -58,9 +58,10 @@ div.column-contact{
 .column-contact.form{
   color: white;
   background-color: #004466;
-  background-image: url(/images/logo_sans.png);
-  background-position: bottom;
+  background-image: url(/images/LOGO_2.png);
   background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 30rem;
 
 }
 
