@@ -6,9 +6,10 @@ import session from "express-session";
 import multer from "multer";
 import morgan from "morgan";
 import cors from "cors";
-import i18n from "i18n";
 
+local();
 connectDB();
+
 /***Models*****/
 import User from './models/user.js';
 
@@ -17,19 +18,20 @@ const app = express();
 const port = 3000;
 const storage = multer.memoryStorage();
 const upload = multer({storage: storage});
-const i18n = new i18n({
-    locales: ['fr', 'en'],
-    directory: path.join(__dirname, 'locales')
-  });
 
 
 
 app.set("trust proxy", 1);
 app.use(express.static("public"));
+app.use(bodyParser.urlencoded({extended : true}));
 app.use(morgan("tiny"));
 app.use(cors());
 app.set("view engine", "ejs"); //Not necessary to write ".ejs"//
-app.use
+app.use(i18n.init)
+
+
+import { ObjectId } from 'mongodb';
+import local from "./middleware/localization.js";
 
 
 //Home page//
