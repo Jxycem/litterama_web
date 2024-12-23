@@ -1,14 +1,15 @@
 import express from "express";
 import 'dotenv/config';
 import bodyParser from "body-parser";
-import axios from "axios";
+import cookieParser from "cookie-parser";
 import session from "express-session";
+import MongoStore from 'connect-mongo';
 import multer from "multer";
 import morgan from "morgan";
 import cors from "cors";
 
-local();
-connectDB();
+
+
 
 /***Models*****/
 import User from './models/user.js';
@@ -20,29 +21,47 @@ const storage = multer.memoryStorage();
 const upload = multer({storage: storage});
 
 
-
+/**Vew engine setup */
+app.set("view engine", "ejs"); //Not necessary to write ".ejs"//
 app.set("trust proxy", 1);
+
+
+/*****Middleware */
+app.use(cookieParser());
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended : true}));
 app.use(morgan("tiny"));
 app.use(cors());
-app.set("view engine", "ejs"); //Not necessary to write ".ejs"//
-app.use(i18n.init)
+app.use(session({
+    secret: process.env.SECRET,
+    secure: true,
+    resave: false,
+    saveUninitialized: false,
+    store: new MongoStore({ 
+        mongoUrl: process.env.MONGODB_URL,
+    }),
+    cookie: {
+        maxAge: 1000 * 60 * 60 * 24 //(1 jour)
+    }
+
+}));
 
 
 import { ObjectId } from 'mongodb';
-import local from "./middleware/localization.js";
+
 
 
 //Home page//
 app.get("/", async (req, res) => {
     try {
         res.render("index");
+        console.log(i18n.getLocale());
+        
+        req.session.lang = req.cookies.language;
     } catch (error) {
         console.log(error);
         res.status(404).send('Sorry, cannot find that');
     }
-    
 });
 
 //About page//
@@ -101,7 +120,10 @@ app.get("/contactez-nous/en", async (req, res) => {
 *****************************/
 
 
+
 app.listen(port, () => {
     console.log(`Listening on port ${port}`);
     console.log(`Hello ${process.env.HELLO}`);
 });
+
+export default app
