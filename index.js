@@ -7,6 +7,8 @@ import MongoStore from 'connect-mongo';
 import multer from "multer";
 import morgan from "morgan";
 import cors from "cors";
+import langMiddleware from "./middleware/localization.js";
+
 
 
 
@@ -47,6 +49,7 @@ app.use(session({
 }));
 
 
+
 import { ObjectId } from 'mongodb';
 
 
@@ -54,10 +57,9 @@ import { ObjectId } from 'mongodb';
 //Home page//
 app.get("/", async (req, res) => {
     try {
-        res.render("index");
-        console.log(i18n.getLocale());
-        
-        req.session.lang = req.cookies.language;
+        res.render("index", {
+            title : t('home.home_title')
+        });
     } catch (error) {
         console.log(error);
         res.status(404).send('Sorry, cannot find that');
