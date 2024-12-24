@@ -7,9 +7,7 @@ import MongoStore from 'connect-mongo';
 import multer from "multer";
 import morgan from "morgan";
 import cors from "cors";
-import langMiddleware from "./middleware/localization.js";
-
-
+import i18nMiddleware from './middleware/localization.js';
 
 
 
@@ -41,12 +39,15 @@ app.use(session({
     saveUninitialized: false,
     store: new MongoStore({ 
         mongoUrl: process.env.MONGODB_URL,
+        dbName: "webapp",
+        collectionName: "sessions"
     }),
     cookie: {
         maxAge: 1000 * 60 * 60 * 24 //(1 jour)
     }
 
 }));
+app.use(i18nMiddleware);
 
 
 
@@ -57,8 +58,19 @@ import { ObjectId } from 'mongodb';
 //Home page//
 app.get("/", async (req, res) => {
     try {
+        if (!req.session.lng) {
+            req.session.lng = req.language; // req.language est défini par i18next
+          }
+        
+          // Changer la langue si un paramètre est passé
+          const lng = req.query.lang;
+          if (lng) {
+            req.session.lng = lng;
+            req.i18n.changeLanguage(lng);
+          }
+        console.log(req.t('home.title'));
         res.render("index", {
-            title : t('home.home_title')
+            t: req.t
         });
     } catch (error) {
         console.log(error);
@@ -69,6 +81,16 @@ app.get("/", async (req, res) => {
 //About page//
 app.get("/a-propos-de-litterama", async (req, res) => {
     try {
+        if (!req.session.lng) {
+            req.session.lng = req.language; // req.language est défini par i18next
+          }
+        
+          // Changer la langue si un paramètre est passé
+          const lng = req.query.lang;
+          if (lng) {
+            req.session.lng = lng;
+            req.i18n.changeLanguage(lng);
+          }
         res.render("about");
     } catch (error) {
         console.log(error);
@@ -79,6 +101,16 @@ app.get("/a-propos-de-litterama", async (req, res) => {
 //Contact//
 app.get("/contactez-nous", async (req, res) => {
     try {
+        if (!req.session.lng) {
+            req.session.lng = req.language; // req.language est défini par i18next
+          }
+        
+          // Changer la langue si un paramètre est passé
+          const lng = req.query.lang;
+          if (lng) {
+            req.session.lng = lng;
+            req.i18n.changeLanguage(lng);
+          }
         res.render("contact");
     } catch (error) {
         console.log(error);
