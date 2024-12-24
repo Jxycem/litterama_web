@@ -1,11 +1,15 @@
 {
     "home": {
-        "title": "Home"
+        "title": "Home",
+        "header": "Discover the world of literature in a whole new light",
+        "subtitle": "It's time for the literary industry to thrive in the digital age."
     },
     "about": {
         "title": "About us"
     },
     "contact": {
-        "title": "Contact"
+        "title": "Contact",
+        "contactUs": "Contact us",
+        "info": "General enquiries"
     }
 }

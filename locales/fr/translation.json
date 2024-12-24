@@ -1,11 +1,15 @@
 {
     "home" : {
-        "title" : "Accueil"
+        "title" : "Accueil",
+        "header": "Découvrez l'univers littéraire sous un nouveau jour",
+        "subtitle": "Il est temps de faire prospérer l'industrie littéraire à travers l'ère numérique"
     },
     "about": {
         "title": "À propos"
     },
     "contact": {
-        "title" : "Contact"
+        "title" : "Contact",
+        "contactUs": "Contactez-nous",
+        "info": "Renseignements généraux"
     }
 }
