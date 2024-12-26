@@ -41,23 +41,25 @@
     </style>
 </head>
 <body>
-    <header class="menu navbar bg-body-dark">
+    <header class="navbar navbar-expand-lg bg-body-dark">
         <div class="container-fluid">
-          <div class="logo">
-            <img src="/images/Logo icone.svg" alt="image_logo_litterama">
-        </div>
+            <a href="/" class="navbar-brand">
+              <img src="/images/Logo icone.svg" alt="image_logo_litterama">  
+            </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-            <a href="/"><%= t('home.title') %></a>
-            <a href="/a-propos-de-litterama"><%= t('about.title') %></a>
-            <a href="/contactez-nous"><%= t('contact.title') %></a>
-            <a href="?lang=fr">Fr</a>
-            <a href="?lang=en">En</a>
+            <a href="/" class="navbar-brand text-white"><%= t('home.title') %></a>
+            <a href="/a-propos-de-litterama" class="navbar-brand text-white"><%= t('about.title') %></a>
+            <a href="/contactez-nous" class="navbar-brand text-white"><%= t('contact.title') %></a>
+            <a href="?lang=fr" class="navbar-brand text-white">Fr</a>
+            <a href="?lang=en" class="navbar-brand text-white">En</a>
         </div>
     </div>
     </div>
     </header>
+
+
     <main>
