@@ -1,15 +1,28 @@
 {
     "home": {
         "title": "Home",
-        "header": "Discover the world of literature in a whole new light",
-        "subtitle": "It's time for the literary industry to thrive in the digital age."
+        "hero": "Discover the world of literature in a whole new light",
+        "subtitle": "It's time for the literary industry to thrive in the digital age.",
+        "second-title": "Inside the book industry",
+        "second-paragraph": "Littérama is an organization created to democratize the literary industry. We are convinced that a thorough understanding of this world is essential to its protection and promotion.",
+        "second-button": "Find out more"
+        
     },
     "about": {
         "title": "About us"
     },
     "contact": {
         "title": "Contact",
-        "contactUs": "Contact us",
-        "info": "General enquiries"
+        "first-title": "Contact us",
+        "second-title": "General enquiries",
+        "form-fName": "First name*",
+        "form-lName": "Last name*",
+        "form-email": "E-mail*",
+        "form-message": "Message*",
+        "form-submit": "Submit",
+        "info-location": "Location"
+    },
+    "partnership": {
+        "title": "Partnership"
     }
 }

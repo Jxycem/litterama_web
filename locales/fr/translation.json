@@ -1,15 +1,27 @@
 {
     "home" : {
         "title" : "Accueil",
-        "header": "Découvrez l'univers littéraire sous un nouveau jour",
-        "subtitle": "Il est temps de faire prospérer l'industrie littéraire à travers l'ère numérique"
+        "hero": "Découvrez l'univers littéraire sous un nouveau jour",
+        "subtitle": "Il est temps de faire prospérer l'industrie littéraire à travers l'ère numérique",
+        "second-title": "À l'intérieur de l'industrie du livre",
+        "second-paragraph": "Littérama est une organisation créée pour démocratiser l'industrie littéraire. Nous sommes convaincus qu'une compréhension approfondie de cet univers est essentielle pour en assurer la protection et la promotion.",
+        "second-button": "En savoir plus"
     },
     "about": {
         "title": "À propos"
     },
     "contact": {
         "title" : "Contact",
-        "contactUs": "Contactez-nous",
-        "info": "Renseignements généraux"
+        "first-title": "Nous contacter",
+        "second-title": "Renseignements généraux",
+        "form-fName": "Prénom*",
+        "form-lName": "Nom*",
+        "form-email": "E-mail*",
+        "form-message": "Message*",
+        "form-submit": "Envoyer",
+        "info-location": "Emplacement"
+    },
+    "partnership": {
+        "title": "Partenariat"
     }
 }
