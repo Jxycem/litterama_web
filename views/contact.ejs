@@ -6,7 +6,8 @@
     <div class="row-contact" style="min-height: 100vh;">
         <div class="column-contact form">
             <h1 style="text-align: center; margin-top: 35px; font-weight: 700;"><%= t('contact.first-title') %></h1>
-            <form action="mailto:litteramamedia@gmail.com" method="post" enctype="text/plain">
+<!----------Contact form-------->
+            <form action="/contactez-nous/envoyer" method="post">
                 <div class="mb-3">
                     <label for="fName" class="form-label"><%= t("contact.form-fName") %></label>
                     <input type="text" class="form-control btn-outline-light bg-transparent text-white" id="fName" name="fName" required>
@@ -20,6 +21,10 @@
                     <input type="email" class="form-control btn-outline-light bg-transparent text-white" id="email" name="email" required>
                   </div>
                   <div class="mb-3">
+                    <label for="subject" class="form-label"><%= t("contact.form-email") %></label>
+                    <input type="text" class="form-control btn-outline-light bg-transparent text-white" id="subject" name="subject" required>
+                  </div>
+                  <div class="mb-3">
                     <label for="message" class="form-label"><%= t("contact.form-message") %></label>
                     <textarea class="form-control btn-outline-light bg-transparent text-white" name="message" id="message" required></textarea>
                   </div>
@@ -31,6 +36,7 @@
                   <button type="submit" class="btn btn-dark"><%= t("contact.form-submit") %></button>                
         </form>
         </div>
+<!-----------------Second column-------------->
         <div class="column-contact" style="color: black; padding: 52px 52px 0 70px;">
           <div class="company_email">
             <h2 style="font-weight: 700;"><%= t('contact.second-title') %></h2>

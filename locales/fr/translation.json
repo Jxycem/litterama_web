@@ -4,7 +4,7 @@
         "hero": "Découvrez l'univers littéraire sous un nouveau jour",
         "subtitle": "Il est temps de faire prospérer l'industrie littéraire à travers l'ère numérique",
         "second-title": "À l'intérieur de l'industrie du livre",
-        "second-paragraph": "Littérama est une organisation créée pour démocratiser l'industrie littéraire. Nous sommes convaincus qu'une compréhension approfondie de cet univers est essentielle pour en assurer la protection et la promotion.",
+        "second-paragraph": "Littérama est une nouvelle organisation créée pour démocratiser l'industrie littéraire. Nous sommes convaincus qu'une compréhension approfondie de cet univers est essentielle pour en assurer la protection et la promotion.",
         "second-button": "En savoir plus"
     },
     "about": {
@@ -23,5 +23,10 @@
     },
     "partnership": {
         "title": "Partenariat"
+    },
+    "footer": {
+        "rights": "Tous droits réservés",
+        "terms": "Conditions d'utilisations",
+        "confidentiality": "Politiques de confidentialité"
     }
 }

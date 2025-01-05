@@ -8,6 +8,9 @@ import multer from "multer";
 import morgan from "morgan";
 import cors from "cors";
 import i18nMiddleware from './middleware/localization.js';
+import nodemailer from "nodemailer";
+import connectDB from './db.js';
+connectDB();
 
 
 
@@ -19,6 +22,17 @@ const app = express();
 const port = 3000;
 const storage = multer.memoryStorage();
 const upload = multer({storage: storage});
+const transporter = nodemailer.createTransport({
+    host: "smtp-relay.brevo.com",
+    port: 587,
+    secure: false,
+    auth: {
+        user: "82c3ff001@smtp-brevo.com",
+        pass: process.env.SMTP_KEY
+    }
+});
+
+
 
 
 /**Vew engine setup */
@@ -117,41 +131,34 @@ app.get("/contactez-nous", async (req, res) => {
         res.status(404).send('Sorry, cannot find that');
     }
 });
-
-/********In ENGLISH 
-
-//Home page - EN//
-app.get("/en", async (req, res) => {
+app.post("/contactez-nous/envoyer", async (req, res) => {
     try {
-        res.render("index");
+        const {fName, lName, email, subject, message} = req.body;
+        const emailExists = User.findOne({email});
+        const sendMail = await transporter.sendMail({
+            from: "info@litterama.ca",
+            replyTo: email,
+            to: "litteramamedia@gmail.com",
+            subject: subject,
+            text: message
+        });
+        if (!emailExists) {
+            const newUser = await User.insertMany({
+                fName: fName,
+                lName: lName,
+                fullName: fName +  " " + lName,
+                email: email
+            });
+            console.log(newUser);
+        }
+        console.log("Message sent: %s", sendMail.messageId);
+        res.redirect("back");
     } catch (error) {
         console.log(error);
-        res.status(404).send('Sorry, cannot find that');
-    }
-    
-});
-
-//About page - EN//
-app.get("/a-propos-de-litterama/en", async (req, res) => {
-    try {
-        res.render("about");
-    } catch (error) {
-        console.log(error);
-        res.status(404).send('Sorry, cannot find that');
-    }
-});
-
-//Contact - EN//
-app.get("/contactez-nous/en", async (req, res) => {
-    try {
-        res.render("contact");
-    } catch (error) {
-        console.log(error);
-        res.status(404).send('Sorry, cannot find that');
+        res.status(404).send("Sorry connot find that");
     }
 });
 
-*****************************/
 
 
 

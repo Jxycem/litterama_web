@@ -5,6 +5,7 @@ body{
 }
 a{
   color: white;
+  text-decoration: none;
 }
 img{
   max-width: 100%;
@@ -57,17 +58,25 @@ div.second-section{
 
 }
 div.second-section> div.textbox-inner{
-  width: 500px;
+  width: 550px;
+  margin: 20px;
 }
 div.third-section{
   display: flex;
   justify-content: center;
   padding: 20px;
+  padding-top: 35px;
   color: white;
   background-image: url("/images/quotes.png");
-  background-position: top;
+  background-position-x: center;
+  background-position-y: top 23%;
   background-repeat: no-repeat;
   background-size: 10rem;
+}
+div.third-section> div.textbox-inner{
+  font-size: larger;
+  width: 420px;
+  margin: 20px;
 }
 
 /*********Contact page*****************/
@@ -98,6 +107,9 @@ div.company_socials> a{
 }
 div.company_socials img{
   width: 2rem;
+}
+div.inner-footer{
+  display: flex;
 }
 
 

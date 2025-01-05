@@ -4,7 +4,7 @@
         "hero": "Discover the world of literature in a whole new light",
         "subtitle": "It's time for the literary industry to thrive in the digital age.",
         "second-title": "Inside the book industry",
-        "second-paragraph": "Littérama is an organization created to democratize the literary industry. We are convinced that a thorough understanding of this world is essential to its protection and promotion.",
+        "second-paragraph": "Litterama is a new organization created to democratize the literary industry. We are convinced that a thorough understanding of this world is essential to its protection and promotion.",
         "second-button": "Find out more"
         
     },
@@ -24,5 +24,11 @@
     },
     "partnership": {
         "title": "Partnership"
+    },
+    "footer": {
+        "rights": "All rights reserved",
+        "terms": "Terms and conditions",
+        "confidentiality": "Privacy policy"
     }
+    
 }

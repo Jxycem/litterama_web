@@ -1,7 +1,14 @@
 </main>
 <footer>
-    <p>Littérama © <%= new Date().getFullYear() %> Tous droits réservés</p>
-    <p><a href="">Conditions d'utilisation</a> | <a href="">Politiques de confidentialité</a></p>
+    <div class="inner-footer">
+        <a href="/">
+            <img src="/images/Logo icone.svg" style="width: 10rem;" alt="image_logo_litterama">
+        </a>
+        <div class="legal">
+           <p style="margin-bottom: 10px;">Littérama © <%= new Date().getFullYear() %> <%= t("footer.rights") %></p>
+        <p><a href=""><%= t("footer.terms") %></a> | <a href=""><%= t("footer.confidentiality") %></a></p> 
+        </div> 
+    </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
