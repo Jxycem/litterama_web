@@ -2,17 +2,45 @@
 <title><%= t('about.title') %> | Littérama</title>
 
 <div class="content">
-    <h1 class="about-title">À propos de Littérama</h1>
-    <h3 class="about-subtitle">Un retour dans le passé</h3>
+    <!--About header-->
+    <div class="header-about">
+        <div class="innerbox-about-title">
+           <h1><%= t("about.page-title") %></h1>
+            <p>On dit que la musique transcende les frontières. Peut on en dire autant de la musqiue?</p> 
+        </div>
+    </div>
 
+    <!--------Description------>
+    <div class="about-description">
+        <div class="innerbox-description">
+            <p><%= t("about.description") %></p>
+        </div>
+    </div>
+    
     <!--Mission, valeurs, etc.-->
 
-    <div class="about first-section">
+    <div class="row-about">
+        <div class="column-mission" style="border-style: groove;">
+            <div class="inner-column mission">
+                <p><%= t("about.mission") %></p>
+            </div>
+        </div>
+        <div class="column-vision" style="border-style: groove;">
+            <div class="inner-column vision">
+                <p><%= t("about.vision") %></p>
+            </div>
+        </div>
 
     </div>
-    <div class="about second-section">
 
+    <!--Slogan-->
+    <div class="row-slogan">
+        <div class="innerbox-about slogan">
+            <p style="font-style: italic;"><%= t("about.slogan") %></p>
+        </div>
     </div>
+
+
 </div>
 
 

@@ -11,7 +11,7 @@ img{
   max-width: 100%;
 }
 
-/*******Header************/
+/*******HEADER************/
 header{
   background-color: black;
   padding: 10px;
@@ -22,7 +22,7 @@ div.container-fluid{
   margin-right: 52px;
 }
 
-/**********Home page***************/
+/**********HOME PAGE***************/
 .hero-section{
   overflow: hidden;
   position: relative;
@@ -79,7 +79,57 @@ div.third-section> div.textbox-inner{
   margin: 20px;
 }
 
-/*********Contact page*****************/
+/*********ABOUT PAGE***************/
+div.header-about{
+  padding: 20px;
+  text-align: center;
+}
+div.innerbox-about-title{
+  margin: 30px;
+}
+.about-description{
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.innerbox-description{
+  margin: 30px;
+  text-align: center;
+  font-size: larger;
+}
+div.row-about{
+  display: flex;
+  padding: 10px;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+div.column-mission{
+  flex: 50%;
+  margin: 30px;
+  border-style: solid;
+}
+div.column-mission> .inner-column.mission{
+text-align: center;
+}
+div.column-vision{
+  flex: 50%;
+  margin: 30px;
+  border-style: solid;
+}
+div.column-vision> .inner-column.vision{
+  text-align: center;
+}
+div.row-slogan{
+  padding: 20px;
+  background-color: #2d9ed3;
+}
+div.innerbox-about.slogan{
+  text-align: center;
+  margin: 30px;
+}
+
+
+/*********CONTACT PAGE*****************/
 div.row-contact{
   display: flex;
 }
@@ -108,10 +158,6 @@ div.company_socials> a{
 div.company_socials img{
   width: 2rem;
 }
-div.inner-footer{
-  display: flex;
-}
-
 
 
 /*********Footer****************/
@@ -120,4 +166,23 @@ footer{
   text-align: center;
   color: white;
   padding: 10px;
+}
+div.inner-footer{
+  display: flex;
+  margin: 30px;
+  padding: 10px;
+}
+a>img.logo-footer{
+  width: 15rem;
+}
+div.inner-footer div.company_socials{
+  display: flex;
+  flex: auto;
+  justify-content: end;
+}
+div.social_box>a{
+  margin-left: 5px;
+}
+div.legal{
+  opacity: 0.6;
 }

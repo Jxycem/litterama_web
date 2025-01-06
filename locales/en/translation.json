@@ -9,7 +9,13 @@
         
     },
     "about": {
-        "title": "About us"
+        "title": "About us",
+        "page-title": "About Litterama",
+        "page-subtitle": "",
+        "description": "Litterama is a new digital media company that aims to promote the world of books through entertaining content.",
+        "slogan": "Depuis notre prochain chapitre...",
+        "mission": "To become a platform that is representative of the Canadian literary world and one that people can identify with.",
+        "vision": "To create a bilingual platform where people with a passion for reading can connect and share. We want to provide entertaining and engaging multimedia content about the literary world."
     },
     "contact": {
         "title": "Contact",
@@ -25,10 +31,16 @@
     "partnership": {
         "title": "Partnership"
     },
+    "terms": {
+        "title" : "Terms and conditions"
+    },
+    "privacy": {
+        "title": "Privacy policy"
+    },
     "footer": {
         "rights": "All rights reserved",
-        "terms": "Terms and conditions",
-        "confidentiality": "Privacy policy"
+        "terms-page": "Terms and conditions",
+        "confidentiality-page": "Privacy policy"
     }
     
 }

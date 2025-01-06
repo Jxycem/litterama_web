@@ -8,7 +8,12 @@
         "second-button": "En savoir plus"
     },
     "about": {
-        "title": "À propos"
+        "title": "À propos",
+        "page-title": "À propos de Littérama",
+        "description": "Littérama est un nouveau média numérique qui vise à promouvoir le monde littéraire à travers du contenu divertissant.",
+        "mission": "Créer une plateforme bilingue où les gens passionnés de lecture pourront connecter et échanger. Nous voulons fournir du contenu multimédia divertissant et engageant sur le milieu littéraire.",
+        "vision": "Devenir une plateforme qui représentera le monde littéraire canadien et auquel les gens pourront s'identifier",
+        "slogan": "Depuis notre prochain chapitre..."
     },
     "contact": {
         "title" : "Contact",
@@ -24,9 +29,15 @@
     "partnership": {
         "title": "Partenariat"
     },
+    "terms": {
+        "title" : "Conditions d'utilisations"
+    },
+    "privacy": {
+        "title": "Politiques de confidentialité"
+    }, 
     "footer": {
         "rights": "Tous droits réservés",
-        "terms": "Conditions d'utilisations",
-        "confidentiality": "Politiques de confidentialité"
+        "terms-page": "Conditions d'utilisations",
+        "confidentiality-page": "Politiques de confidentialité"
     }
 }

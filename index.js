@@ -159,6 +159,23 @@ app.post("/contactez-nous/envoyer", async (req, res) => {
     }
 });
 
+app.get("/conditions-generales", async (req, res) => {
+    try {
+        res.render("terms");
+    } catch (error) {
+        console.log(error);
+        res.status(404).send("Sorry connot find that");
+    }
+});
+app.get("/politiques-confidentialite", async (req, res) => {
+    try {
+        res.render("privacy");
+    } catch (error) {
+        console.log(error);
+        res.status(404).send("Sorry connot find that");
+    }
+});
+
 
 
 
