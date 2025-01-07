@@ -35,6 +35,8 @@ const transporter = nodemailer.createTransport({
 
 
 
+
+
 /**Vew engine setup */
 app.set("view engine", "ejs"); //Not necessary to write ".ejs"//
 app.set("trust proxy", 1);
