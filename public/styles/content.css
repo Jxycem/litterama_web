@@ -59,7 +59,7 @@ div.second-section{
 }
 div.second-section> div.textbox-inner{
   width: 550px;
-  margin: 20px;
+  margin: 40px 20px 40px 20px;
 }
 div.third-section{
   display: flex;

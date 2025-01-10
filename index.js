@@ -1,4 +1,5 @@
 import express from "express";
+import i18nMiddleware from './middleware/localization.js';
 import 'dotenv/config';
 import bodyParser from "body-parser";
 import cookieParser from "cookie-parser";
@@ -7,7 +8,6 @@ import MongoStore from 'connect-mongo';
 import multer from "multer";
 import morgan from "morgan";
 import cors from "cors";
-import i18nMiddleware from './middleware/localization.js';
 import nodemailer from "nodemailer";
 import connectDB from './db.js';
 connectDB();
@@ -67,7 +67,7 @@ app.use(i18nMiddleware);
 
 
 
-import { ObjectId } from 'mongodb';
+
 
 
 
@@ -86,8 +86,10 @@ app.get("/", async (req, res) => {
           }
         console.log(req.t('home.title'));
         res.render("index", {
-            t: req.t
+            t: req.t,
+            lang: req.language
         });
+        console.log(req.language);
     } catch (error) {
         console.log(error);
         res.status(404).send('Sorry, cannot find that');

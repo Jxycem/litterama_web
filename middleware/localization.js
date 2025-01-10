@@ -12,6 +12,8 @@ i18next.use(Backend).use(middleware.LanguageDetector).init({
   detection: {
     order: ['querystring', "session", 'cookie', 'header'], // Ordre de détection de la langue
     caches: ['cookie', "session"], // Stockage de la langue dans un cookie
+    lookupQuerystring: "lang",
+    lookupSession: "lng"
   },
 });
 
