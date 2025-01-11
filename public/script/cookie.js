@@ -11,6 +11,7 @@ CookieConsent.run({
 
     cookie: {
         name: 'cc_cookie',
+        useLocalStorage: true
         // domain: location.hostname,
         // path: '/',
         // sameSite: "Lax",
@@ -97,6 +98,7 @@ CookieConsent.run({
             fr: {
                 consentModal: {
                     title: "Nous utilisons des cookies",
+                    description: "Nous utilisons des cookies pour personnaliser le contenu et analyser notre trafic",
                     acceptAllBtn: "Tout accepter",
                     acceptNecessaryBtn: "Tout rejeter",
                     showPreferencesBtn: "Gérer les préférences",
@@ -119,14 +121,36 @@ CookieConsent.run({
                         {
                             title: "Strictement nécéssaire",
                             description: "Ces cookies sont essentiels au bon fonctionnement du site web et ne peuvent pas être désactivés.",
-                            linkedCategory: "nécéssaire"
+                            linkedCategory: "necessary"
                         },
                         {
-                            title: "",
-                            description: "",
-                            linkedCategory: "",
-
+                            title: "Performance et Analyses",
+                            description: "Ces cookies recueillent des informations sur la manière dont vous utilisez notre site web. Toutes les données sont anonymes et ne peuvent être utilisées pour vous identifier.",
+                            linkedCategory: "analytics"
+                            /****** 
+                            cookieTable: {
+                                caption: 'Cookie table',
+                                headers: {
+                                    name: 'Cookie',
+                                    domain: 'Domain',
+                                    desc: 'Description'
+                                },
+                                body: [
+                                    {
+                                        name: '_ga',
+                                        domain: location.hostname,
+                                        desc: 'Description 1',
+                                    },
+                                    {
+                                        name: '_gid',
+                                        domain: location.hostname,
+                                        desc: 'Description 2',
+                                    }
+                                ]
+                            }
+*/
                         }
+                        
                     ]
                 }
 
@@ -134,7 +158,7 @@ CookieConsent.run({
             en: {
                 consentModal: {
                     title: 'We use cookies',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+                    description: 'We use cookies to personalize content and analyze our traffic',
                     acceptAllBtn: 'Accept all',
                     acceptNecessaryBtn: 'Reject all',
                     showPreferencesBtn: 'Manage Individual preferences',
@@ -166,6 +190,7 @@ CookieConsent.run({
                             title: 'Performance and Analytics',
                             description: 'These cookies collect information about how you use our website. All of the data is anonymized and cannot be used to identify you.',
                             linkedCategory: 'analytics',
+                            /***** 
                             cookieTable: {
                                 caption: 'Cookie table',
                                 headers: {
@@ -186,15 +211,7 @@ CookieConsent.run({
                                     }
                                 ]
                             }
-                        },
-                        {
-                            title: 'Targeting and Advertising',
-                            description: 'These cookies are used to make advertising messages more relevant to you and your interests. The intention is to display ads that are relevant and engaging for the individual user and thereby more valuable for publishers and third party advertisers.',
-                            linkedCategory: 'ads',
-                        },
-                        {
-                            title: 'More information',
-                            description: 'For any queries in relation to my policy on cookies and your choices, please <a href="#contact-page">contact us</a>'
+                          ****/      
                         }
                     ]
                 }

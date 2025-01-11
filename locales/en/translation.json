@@ -26,6 +26,8 @@
         "form-email": "E-mail*",
         "form-message": "Message*",
         "form-submit": "Submit",
+        "form-sent": "We have received your message!",
+        "form-error" : "Please complete the reCAPTCHA.",
         "info-location": "Location"
     },
     "partnership": {

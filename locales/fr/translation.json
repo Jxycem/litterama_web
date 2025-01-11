@@ -23,7 +23,9 @@
         "form-lName": "Nom*",
         "form-email": "E-mail*",
         "form-message": "Message*",
+        "form-error": "Veuillez compléter le reCAPTCHA.",
         "form-submit": "Envoyer",
+        "form-sent": "Nous avons bien reçu votre message!",
         "info-location": "Emplacement"
     },
     "partnership": {

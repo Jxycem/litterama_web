@@ -6,6 +6,9 @@
     <div class="row-contact" style="min-height: 100vh;">
         <div class="column-contact form">
             <h1 style="text-align: center; margin-top: 35px; font-weight: 700;"><%= t('contact.first-title') %></h1>
+            <% if (locals.fName) { %>
+              <div style="color: white; text-align: center; font-size: 1.6rem; font-style: italic;"><%= t("contact.form-sent") %></div>
+             <% }  %>
 <!----------Contact form-------->
             <form action="/contactez-nous/envoyer" method="post">
                 <div class="mb-3">
@@ -21,19 +24,17 @@
                     <input type="email" class="form-control btn-outline-light bg-transparent text-white" id="email" name="email" required>
                   </div>
                   <div class="mb-3">
-                    <label for="subject" class="form-label"><%= t("contact.form-email") %></label>
-                    <input type="text" class="form-control btn-outline-light bg-transparent text-white" id="subject" name="subject" required>
-                  </div>
-                  <div class="mb-3">
                     <label for="message" class="form-label"><%= t("contact.form-message") %></label>
                     <textarea class="form-control btn-outline-light bg-transparent text-white" name="message" id="message" required></textarea>
                   </div>
-                  <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                  </div>
-                  <div style="display: none;" class="g-recaptcha" data-sitekey="6LfXqK0qAAAAAJTeBgVAMNk9vRSuu-20CotBEwIa"></div>
-                  <button type="submit" class="btn btn-dark"><%= t("contact.form-submit") %></button>                
+                  <div class="g-recaptcha" data-sitekey="6LfXqK0qAAAAAJTeBgVAMNk9vRSuu-20CotBEwIa" aria-required="true"></div>
+                  <% if (locals.message) { %>
+                   <div style="color: red;"><%= t("contact.form-error") %></div>
+                  <% }  %>
+                  <button type="submit" class="btn btn-dark" style="margin-top: 20px;"><%= t("contact.form-submit") %></button>
+                  
+                  
+
         </form>
         </div>
 <!-----------------Second column-------------->
