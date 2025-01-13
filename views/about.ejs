@@ -1,44 +1,37 @@
 <%- include("partials/header.ejs") %>
 <title><%= t('about.title') %> | Littérama</title>
 
-<div class="content">
-    <!--About header-->
-    <div class="header-about">
-        <div class="innerbox-about-title">
-           <h1><%= t("about.page-title") %></h1>
-            <p>On dit que la musique transcende les frontières. Peut on en dire autant de la musqiue?</p> 
+<div class="content" style="background-color: black;">
+    <div class="about-bg">
+            <img class="about" src="/images/about_img.png" alt="about_bg_clapper_board">
+        <!--About header-->
+        <div class="header-about">
+            <div class="innerbox-about-title">
+            <h1><%= t("about.page-title") %></h1>
+                <p><%= t("about.page-subtitle") %></p> 
+            </div>
         </div>
-    </div>
 
-    <!--------Description------>
-    <div class="about-description">
-        <div class="innerbox-description">
-            <p><%= t("about.description") %></p>
+        <!--------Description------>
+        <div class="about-description">
+            <div class="innerbox-description">
+                <p style="margin-bottom: 0;"><%= t("about.description") %> <%= t("about.mission") %> <%= t("about.vision") %></p>
+                <a class="btn btn-outline-light" href="/contactez-nous" role="button" style="margin: 30px;"><%= t("about.description-button") %></a>
+            </div>
+            
+        </div>
+        
+        <!--Mission, valeurs, etc.-->
+
+
+        <!--Slogan-->
+        <div class="row-slogan" style="display: none;">
+            <div class="innerbox-about slogan">
+                <p style="font-style: italic;"><%= t("about.slogan") %></p>
+            </div>
         </div>
     </div>
     
-    <!--Mission, valeurs, etc.-->
-
-    <div class="row-about">
-        <div class="column-mission" style="border-style: groove;">
-            <div class="inner-column mission">
-                <p><%= t("about.mission") %></p>
-            </div>
-        </div>
-        <div class="column-vision" style="border-style: groove;">
-            <div class="inner-column vision">
-                <p><%= t("about.vision") %></p>
-            </div>
-        </div>
-
-    </div>
-
-    <!--Slogan-->
-    <div class="row-slogan">
-        <div class="innerbox-about slogan">
-            <p style="font-style: italic;"><%= t("about.slogan") %></p>
-        </div>
-    </div>
 
 
 </div>

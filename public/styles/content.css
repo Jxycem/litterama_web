@@ -80,23 +80,52 @@ div.third-section> div.textbox-inner{
 }
 
 /*********ABOUT PAGE***************/
+div.about-bg{
+  position: relative;
+  color: white;
+  height: 545px;
+  overflow: hidden;
+}
+img.about{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.17;
+}
 div.header-about{
   padding: 20px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 div.innerbox-about-title{
   margin: 30px;
+  text-align: center;
+}
+div.innerbox-about-title > h1{
+  font-size: 3.5rem;
+  font-weight: 700;
 }
 .about-description{
   padding: 10px;
   display: flex;
   justify-content: center;
+  position: absolute;
+  top: 200px;
 }
 .innerbox-description{
   margin: 30px;
   text-align: center;
-  font-size: larger;
+  font-size: 1.3rem;
+  font-weight: 500;
+  width: 75%;
 }
+/******
 div.row-about{
   display: flex;
   padding: 10px;
@@ -127,7 +156,7 @@ div.innerbox-about.slogan{
   text-align: center;
   margin: 30px;
 }
-
+*****/
 
 /*********CONTACT PAGE*****************/
 div.row-contact{

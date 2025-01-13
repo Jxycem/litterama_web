@@ -1,19 +1,27 @@
 {
+    "header": {
+        "home-title": "Accueil",
+        "description": "Littérama est un nouveau média qui ne pense qu'à une chose: l'essor du monde du livre à l'ère du numérique",
+        "og-title": "Littérama | Média Numérique Dans le Mileu du Livre",
+        "og-description": "Production de contenu multimédia divertissant et engageant sur le milieu littéraire."
+    },
     "home" : {
-        "title" : "Accueil",
+        "title" : "Infodivertissement Dans Le Milieu Littéraire",
         "hero": "Découvrez l'univers littéraire sous un nouveau jour",
-        "subtitle": "Il est temps de faire prospérer l'industrie littéraire à travers l'ère numérique",
+        "subtitle": "Veillons à ce que l'industrie littéraire prospère à l'ère numérique",
         "second-title": "À l'intérieur de l'industrie du livre",
-        "second-paragraph": "Littérama est une nouvelle organisation créée pour démocratiser l'industrie littéraire. Nous sommes convaincus qu'une compréhension approfondie de cet univers est essentielle pour en assurer la protection et la promotion.",
+        "second-paragraph": "Littérama est une nouvelle organisation dédiée à la démocratisation de l'industrie littéraire. Nous sommes convaincus qu'une meilleure compréhension de cet univers est essentielle pour en assurer la protection et favoriser son rayonnement.",
         "second-button": "En savoir plus"
     },
     "about": {
         "title": "À propos",
         "page-title": "À propos de Littérama",
+        "page-subtitle": "On dit que la musique transcende les frontières. Peut-on en dire autant des livres?",
         "description": "Littérama est un nouveau média numérique qui vise à promouvoir le monde littéraire à travers du contenu divertissant.",
-        "mission": "Créer une plateforme bilingue où les gens passionnés de lecture pourront connecter et échanger. Nous voulons fournir du contenu multimédia divertissant et engageant sur le milieu littéraire.",
-        "vision": "Devenir une plateforme qui représentera le monde littéraire canadien et auquel les gens pourront s'identifier",
-        "slogan": "Depuis notre prochain chapitre..."
+        "mission": "Nous nous sommes donnés comme mission de créer une plateforme bilingue où les gens passionnés de lecture pourront connecter et échanger. Nous voulons fournir du contenu multimédia divertissant et engageant sur le milieu littéraire.",
+        "vision": "Nous aspirons à devenir une plateforme qui représentera le monde littéraire canadien et auquel les gens pourront s'identifier",
+        "slogan": "Depuis notre prochain chapitre...",
+        "description-button": "Parlons-en"
     },
     "contact": {
         "title" : "Contact",

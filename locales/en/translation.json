@@ -1,21 +1,28 @@
 {
+    "header": {
+        "home-title": "Home",
+        "description": "Littérama is a new media outlet with one focus: the growth of the book industry in the digital age.",
+        "og-title": "Litterama | Digital Media in the Book World",
+        "og-description": "Production of entertaining and engaging multimedia content about the literary world."
+    },
     "home": {
-        "title": "Home",
+        "title": "Infotainment in the Literary World",
         "hero": "Discover the world of literature in a whole new light",
-        "subtitle": "It's time for the literary industry to thrive in the digital age.",
+        "subtitle": "Let's make sure that the literary industry thrives in the digital age",
         "second-title": "Inside the book industry",
-        "second-paragraph": "Litterama is a new organization created to democratize the literary industry. We are convinced that a thorough understanding of this world is essential to its protection and promotion.",
+        "second-paragraph": "Litterama is a new organization dedicated to the democratization of the literary industry. We are convinced that a better understanding of this universe is essential to ensure its protection and promote its influence.",
         "second-button": "Find out more"
         
     },
     "about": {
         "title": "About us",
         "page-title": "About Litterama",
-        "page-subtitle": "",
+        "page-subtitle": "It's been said that music crosses borders. Can the same be said of books?",
         "description": "Litterama is a new digital media company that aims to promote the world of books through entertaining content.",
         "slogan": "Depuis notre prochain chapitre...",
-        "mission": "To become a platform that is representative of the Canadian literary world and one that people can identify with.",
-        "vision": "To create a bilingual platform where people with a passion for reading can connect and share. We want to provide entertaining and engaging multimedia content about the literary world."
+        "mission": "To create a bilingual platform where people with a passion for reading can connect and share. We want to provide entertaining and engaging multimedia content about the literary world.",
+        "vision": "To become a platform that represents the Canadian literary world and with which people can identify.",
+        "description-button": "Let's discuss"
     },
     "contact": {
         "title": "Contact",
