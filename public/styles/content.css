@@ -27,6 +27,8 @@ div.container-fluid{
   overflow: hidden;
   position: relative;
   height: 655px;
+  background-color: #636363;
+
 }
 video{
   width: 100%;
